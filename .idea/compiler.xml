@@ -12,6 +12,8 @@
         <module name="lesson_003" />
         <module name="lesson_004" />
         <module name="lesson_005" />
+        <module name="lesson_009" />
+        <module name="lesson_011" />
       </profile>
     </annotationProcessing>
   </component>
