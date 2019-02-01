@@ -9,6 +9,9 @@
         <module name="Course" />
         <module name="lesson_001" />
         <module name="lesson_002" />
+        <module name="lesson_003" />
+        <module name="lesson_004" />
+        <module name="lesson_005" />
       </profile>
     </annotationProcessing>
   </component>
