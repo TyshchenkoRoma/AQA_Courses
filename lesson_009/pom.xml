@@ -8,5 +8,16 @@
     <artifactId>lesson_009</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <dependencies>
+           <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+    </dependencies>
 </project>
