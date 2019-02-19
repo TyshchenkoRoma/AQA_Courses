@@ -27,7 +27,7 @@ public class LessonOneDataTypes {
      */
 
     public static void main(String[] args) {
-        byte variableByte = 0101;
+        int variableByte = 0101;
         char variableChar = 'v';
         char variableCharAsNumber = 118;
         int variableInt = 1;
