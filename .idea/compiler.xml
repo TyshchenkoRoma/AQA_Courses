@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1" />
-        <module name="3" />
         <module name="4" />
         <module name="course" />
         <module name="Course" />
@@ -20,7 +19,15 @@
         <module name="lesson_009" />
         <module name="lesson_011" />
       </profile>
+      <profile name="Annotation profile for lesson_004" enabled="true">
+        <sourceOutputDir name="../lesson_004/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../lesson_004/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="3" />
+      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="lesson" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

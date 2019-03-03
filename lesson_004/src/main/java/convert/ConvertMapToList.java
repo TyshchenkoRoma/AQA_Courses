@@ -14,7 +14,6 @@ public class ConvertMapToList {
         map.put(20, "orange");
         map.put(30, "banana");
 
-
         System.out.println("\n1. Export Map Key to List...");
 
         List<Integer> result = new ArrayList(map.keySet());
@@ -26,7 +25,5 @@ public class ConvertMapToList {
         List<String> result2 = new ArrayList(map.values());
 
         result2.forEach(System.out::println);
-
     }
-
 }

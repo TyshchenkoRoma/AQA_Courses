@@ -7,7 +7,7 @@ public class GenericMain {
 
         GenericHolder<String> strHolder = new GenericHolder<>();
         strHolder.setData("Hello");
-       // strHolder.setData(new int[] {10, 20, 30});
+        //strHolder.setData(new int[] {10, 20, 30});
 
         String str = strHolder.getData();
         System.out.println(str);
@@ -17,7 +17,5 @@ public class GenericMain {
 
         int [] arr = intHolder.getData();
         System.out.println(Arrays.toString(arr));
-
-
     }
 }
