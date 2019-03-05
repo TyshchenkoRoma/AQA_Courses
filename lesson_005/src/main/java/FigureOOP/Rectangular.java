@@ -14,4 +14,7 @@ public class Rectangular extends Figure {
     public double squre() {
         return height * weight;
     }
+
+
+
 }

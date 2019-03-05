@@ -8,6 +8,7 @@ public class Collection_1 {
         Queue<String> queue = new LinkedList<>();
 
         Map<String, String> map = new HashMap<>();
+        TreeMap<String, String> treeMap = new TreeMap<>();
 
         /*  Collection  */
 
@@ -43,6 +44,7 @@ public class Collection_1 {
 //        System.out.println("Collection size is: " + list.size());
 
         /*  Set  */
+        // sorted
 
 //        set.add("one");
 //        set.add("one");
@@ -69,11 +71,14 @@ public class Collection_1 {
 
         /*  Map  */
 
-//        map.put("1", "Volvo");
-//        map.put("2", "Zaz");
-//        map.put("3", "BMW");
-//        map.put(null, "Renault");
-//        System.out.println(map.get(null));
-//        System.out.println(map.get("3"));
+        map.put("1", "Volvo");
+        map.put("2", "Zaz");
+        map.put("3", "BMW");
+        map.put(null, "Renault");
+        System.out.println(map.get(null));
+        System.out.println(map.get("3"));
+        treeMap.put("3", "BMW");
+        treeMap.put(null, "Renault");
+        System.out.println(treeMap.get(null));
     }
 }

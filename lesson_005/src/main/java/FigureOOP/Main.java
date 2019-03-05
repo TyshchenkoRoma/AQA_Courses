@@ -12,5 +12,8 @@ public class Main {
 
         StringBuilder sb = new StringBuilder();
         sb = sb.append("sss");
+
+        System.out.println();
+
     }
 }
