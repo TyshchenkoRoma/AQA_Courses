@@ -56,6 +56,9 @@ public class HashCode_Equals {
 
     public native int hashCode();
     // c++
+    //При вычислении хэш-кода для объектов класса Object по умолчанию используется Park-Miller RNG алгоритм.
+    // В основу работы данного алгоритма положен генератор случайных чисел.
+    // Это означает, что при каждом запуске программы у объекта будет разный хэш-код.
 
     /*static inline intptr_t get_next_hash(Thread * Self, oop obj) {
         intptr_t value = 0 ;
