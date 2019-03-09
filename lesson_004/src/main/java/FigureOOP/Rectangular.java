@@ -1,6 +1,7 @@
 package FigureOOP;
 
 public class Rectangular extends Figure {
+ //   public class Rectangular implements IFigure {
 
     private double height;
     private double weight;
@@ -10,11 +11,7 @@ public class Rectangular extends Figure {
         this.weight = weight;
     }
 
-    @Override
     public double squre() {
         return height * weight;
     }
-
-
-
 }

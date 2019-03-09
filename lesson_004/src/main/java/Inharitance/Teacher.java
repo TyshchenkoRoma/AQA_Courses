@@ -29,7 +29,10 @@ class MathTeacher extends Teacher {
         Teacher obj = new MathTeacher();
         System.out.println(obj.collegeName);
         System.out.println(obj.designation);
-        // System.out.println(obj.mainSubject);
+        //System.out.println(obj.mainSubject);
+       // MathTeacher mathTeacher = new Teacher();
+        MathTeacher mathTeacher = new MathTeacher();
+        System.out.println(mathTeacher.mainSubject);
         obj.does();
     }
 }
