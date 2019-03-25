@@ -7,20 +7,19 @@ public class HashCode_Equals {
         Object object = new Object();
         int hCode;
         hCode = object.hashCode();
-        System.out.println(hCode);
+      //  System.out.println(hCode);
 
         BlackBox object1 = new BlackBox(5, 10);
         BlackBox object2 = new BlackBox(5, 10);
 
-        System.out.println("Result of comparesing is: " + object1.equals(object2));// должно быть true, поскольку содержимое объектов эквивалентно
-        System.out.println(object1.hashCode() == object2.hashCode());// должно быть true
+       // System.out.println("Result of FileNotFoundException is: " + object1.equals(object2));// должно быть true, поскольку содержимое объектов эквивалентно
+        System.out.println(object1.equals(object2));// должно быть true
         System.out.println(object1.hashCode() + "\n" + object2.hashCode());
-
 
         BlackBox object3 = new BlackBox(5, 10);
         BlackBox object4 = object3;// Переменная object4 ссылается на
         //тот-же объект что и переменная object3
-        //     System.out.println("object3 and object4 is :" + object3.equals(object4));//true
+            System.out.println("object3 and object4 is :" + object3.equals(object4));//true
 
     }
 
@@ -33,15 +32,15 @@ public class HashCode_Equals {
             this.varB = varB;
         }
 
-//        @Override
-//        public boolean equals(Object o) {
-//            if (this == o) return true;
-//            if (o == null || getClass() != o.getClass()) return false;
-//            BlackBox blackBox = (BlackBox) o;
-//            return varA == blackBox.varA &&
-//                    varB == blackBox.varB;
-//        }
-//
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            BlackBox blackBox = (BlackBox) o;
+            return varA == blackBox.varA &&
+                    varB == blackBox.varB;
+        }
+
 //        @Override
 //        public int hashCode() {
 //            return Objects.hash(varA, varB);
@@ -54,7 +53,7 @@ public class HashCode_Equals {
         return (this == obj);
     }
 
-    public native int hashCode();
+  //  public native int hashCode();
     // c++
     //При вычислении хэш-кода для объектов класса Object по умолчанию используется Park-Miller RNG алгоритм.
     // В основу работы данного алгоритма положен генератор случайных чисел.

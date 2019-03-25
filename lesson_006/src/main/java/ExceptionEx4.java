@@ -6,12 +6,12 @@ public class ExceptionEx4 {
             int n =20;
             int fraction = n/d;
         }
-        catch(ArithmeticException e){
-            System.out.println("In the catch clock due to Exception = "+e);
+        catch(ArithmeticException | OutOfMemoryError e){
+            System.out.println("In the catch clock due to Exception = ");
         }
-        catch(Exception e){
-            System.out.println("In the catch clock due to Exception = "+e);
-        }
+//        catch(Exception e){
+//            System.out.println("In the catch clock due to Exception = "+e);
+//        }
 
         finally{
             System.out.println("Inside the finally block");

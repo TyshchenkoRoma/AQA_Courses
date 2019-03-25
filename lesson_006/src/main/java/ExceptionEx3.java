@@ -4,7 +4,7 @@ import java.io.FileReader;
 
 public class ExceptionEx3 {
 
-    public static void main(String args[])  {
+    public static void main(String args[]) throws FileNotFoundException  {
         try {
 
             // Following file does not exist
