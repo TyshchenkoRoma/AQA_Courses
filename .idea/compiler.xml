@@ -35,6 +35,8 @@
       <module name="lesson" target="1.8" />
       <module name="lesson_007" target="1.5" />
       <module name="lesson_007 Ann" target="1.5" />
+      <module name="lesson_009_2" target="1.8" />
+      <module name="lesson_10" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
