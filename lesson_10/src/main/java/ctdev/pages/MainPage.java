@@ -51,7 +51,7 @@ public class MainPage {
     private WebElement contactUs;
 // --------------------------------------------------------------------------
 
-//    private By tshirtsTab = By.xpath("//*[@id='block_top_menu']/ul/li[3]/a");
+///    private By tshirtsTab = By.xpath("//*[@id='block_top_menu']/ul/li[3]/a");
 //    private By sizeLcheckbox = By.id("layered_id_attribute_group_3");
 //
 //    public MainPage(WebDriver driver) {
