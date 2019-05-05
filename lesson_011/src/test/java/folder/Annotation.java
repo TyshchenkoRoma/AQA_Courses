@@ -1,8 +1,10 @@
-import org.junit.*;
+package folder;
 
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 public class Annotation {
-    @Before
+    @BeforeMethod
     public void before(){
         System.out.println("before method");
     }
@@ -12,7 +14,7 @@ public class Annotation {
         System.out.println("before class\n");
     }
 
-    @After
+    @AfterMethod
     public void after(){
         System.out.println("after method\n");
     }
@@ -22,14 +24,13 @@ public class Annotation {
         System.out.println("after class");
     }
 
-    //    @Test(expected=org.junit.ComparisonFailure.class)
-    @Test//(expected=junit.framework.ComparisonFailure.class)
+    @Test
     public void test1(){
         System.out.println("test1");
         Assert.assertEquals("1", "1");
     }
 
-    @Test(timeout=1000)
+    @Test(timeOut=1000)
     public void test2(){
         System.out.println("test2");
         String expected = "expected";

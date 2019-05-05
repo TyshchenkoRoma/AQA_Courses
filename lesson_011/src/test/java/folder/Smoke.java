@@ -1,9 +1,13 @@
-import org.junit.Assert;
-import org.junit.Test;
+package folder;
+
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class Smoke {
-    @Test
+    @Test(groups = "smoke")
     public void trueSmokeTest (){
+        System.out.println("TEST FROM SMOKE XML");
         Assert.assertTrue(true);
     }
     @Test

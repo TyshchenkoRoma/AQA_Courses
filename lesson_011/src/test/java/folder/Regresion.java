@@ -1,5 +1,8 @@
-import org.junit.Assert;
-import org.junit.Test;
+package folder;
+
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class Regresion {
     @Test
