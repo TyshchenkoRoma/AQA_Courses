@@ -4,17 +4,17 @@ import org.junit.*;
 public class Annotation {
     @Before
     public void before(){
-        System.out.println("before");
+        System.out.println("before method");
     }
 
     @BeforeClass
     public static void beforeClass(){
-        System.out.println("before class");
+        System.out.println("before class\n");
     }
 
     @After
     public void after(){
-        System.out.println("after");
+        System.out.println("after method\n");
     }
 
     @AfterClass
@@ -23,10 +23,10 @@ public class Annotation {
     }
 
     //    @Test(expected=org.junit.ComparisonFailure.class)
-    @Test(expected=junit.framework.ComparisonFailure.class)
+    @Test//(expected=junit.framework.ComparisonFailure.class)
     public void test1(){
         System.out.println("test1");
-        Assert.assertEquals("Expected value is not equal to actual, ", "expected", "actual");
+        Assert.assertEquals("1", "1");
     }
 
     @Test(timeout=1000)
