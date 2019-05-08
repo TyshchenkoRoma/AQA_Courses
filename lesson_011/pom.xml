@@ -35,9 +35,9 @@
                     <version>2.19.1</version>
                     <configuration>
                         <suiteXmlFiles>
-                            <suiteXmlFile>testng.xml</suiteXmlFile>
-<!--                            <suiteXmlFile>${suiteFile}</suiteXmlFile>
-                            <suiteXmlFile>regresionFolder2.xml</suiteXmlFile>-->
+                           <!-- <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                            <suiteXmlFile>${suiteFile}</suiteXmlFile>
+                          <!--  <suiteXmlFile>regresion.xml</suiteXmlFile>-->
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
