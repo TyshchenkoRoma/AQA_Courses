@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+
 public class LessonOneDataTypes {
 
     // Первый Урок и пример однострочного комментария
@@ -45,6 +47,20 @@ public class LessonOneDataTypes {
         System.out.println("Double var is: " + variableDoubel);
         System.out.println("Float var is: " + variableFloat);
         System.out.println("Boolean var is: " + variableBoolean);
-        System.out.println("String var is: " + variableString);
+        System.out.println("String var is: " + variableString + "\n");
+
+
+        int a = 128    ;
+        byte b = (byte) a;
+        byte a1 = b;
+        System.out.println("b= " + b);
+
+        double d = 10.1;
+        int intD = (int) d;
+        System.out.println("int d = " + intD);
+        double d1 = intD;
+
+        String st =  "string value" + String.valueOf(a1) + " st ";
+        System.out.println(st);
     }
 }
