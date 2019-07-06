@@ -7,7 +7,7 @@ public class HashCode_Equals {
         Object object = new Object();
         int hCode;
         hCode = object.hashCode();
-      //  System.out.println(hCode);
+        System.out.println(hCode);
 
         BlackBox object1 = new BlackBox(5, 10);
         BlackBox object2 = new BlackBox(5, 10);
@@ -17,7 +17,8 @@ public class HashCode_Equals {
         System.out.println(object1.hashCode() + "\n" + object2.hashCode());
 
         BlackBox object3 = new BlackBox(5, 10);
-        BlackBox object4 = object3;// Переменная object4 ссылается на
+        BlackBox object4 = object3;
+        System.out.println("3 " + object3.hashCode() + " 4 " + object4.hashCode());// Переменная object4 ссылается на
         //тот-же объект что и переменная object3
             System.out.println("object3 and object4 is :" + object3.equals(object4));//true
 
@@ -41,10 +42,10 @@ public class HashCode_Equals {
                     varB == blackBox.varB;
         }
 
-//        @Override
-//        public int hashCode() {
-//            return Objects.hash(varA, varB);
-//        }
+       /* @Override
+        public int hashCode() {
+            return Objects.hash(varA, varB);
+        }*/
     }
 
     /*  Класс Object  */

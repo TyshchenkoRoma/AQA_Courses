@@ -31,7 +31,6 @@ public final class WebDriverFactory {
 
             default:
                 throw new IllegalArgumentException("No implementation for provided driver type");
-
         }
     }
 }

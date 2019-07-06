@@ -17,12 +17,12 @@ public class MainPageTest {
     @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
-                                                        // win mac linux
-        this.driver = new ChromeDriver();
-        this.driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
-        this.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        // win mac linux
+        driver = new ChromeDriver();
+        driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-        this.mainPage = new MainPage(this.driver);
+        mainPage = new MainPage(this.driver);
     }
 
     @Test
@@ -34,9 +34,9 @@ public class MainPageTest {
                         .isSizeL());
     }
 
-//    @After
-//    public void cleanup(){
-//        driver.manage().deleteAllCookies();
-//        driver.close();
-//    }
+    @After
+    public void cleanup(){
+        driver.manage().deleteAllCookies();
+        driver.close();
+    }
 }

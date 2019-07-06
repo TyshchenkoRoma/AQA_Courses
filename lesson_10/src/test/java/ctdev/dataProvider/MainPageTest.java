@@ -23,8 +23,10 @@ public class MainPageTest extends BaseTest {
         mainPage.clickProceedToCheckout();
 
         String actualResult = mainPage.getTotalPrice();
-        String expectedResult = "$18.51";
+        String expectedResult = "$18.511";
 
-        Assert.assertEquals("Actual result is: " + actualResult + " Expected result is: " + expectedResult, expectedResult, actualResult);
+        Assert.assertEquals("$18.511", mainPage.getTotalPrice());
+
+       // Assert.assertEquals("Actual result is: " + actualResult + " Expected result is: " + expectedResult, expectedResult, actualResult);
     }
 }

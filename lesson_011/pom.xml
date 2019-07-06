@@ -7,12 +7,14 @@
     <groupId>lesson_011</groupId>
     <artifactId>lesson_011</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <properties>
         <defaultSuiteFiles>
             testng.xml
         </defaultSuiteFiles>
         <suiteFile>${defaultSuiteFiles}</suiteFile>
-
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -35,7 +37,7 @@
                     <version>2.19.1</version>
                     <configuration>
                         <suiteXmlFiles>
-                           <!-- <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                         <!--   <suiteXmlFile>testng.xml</suiteXmlFile>-->
                             <suiteXmlFile>${suiteFile}</suiteXmlFile>
                           <!--  <suiteXmlFile>regresion.xml</suiteXmlFile>-->
                         </suiteXmlFiles>

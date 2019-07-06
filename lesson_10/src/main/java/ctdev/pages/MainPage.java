@@ -129,8 +129,7 @@ public class MainPage {
 
     public void clickProceedToCheckout() {
         new WebDriverWait(driver, 10).
-                until(ExpectedConditions.visibilityOfElementLocated(By.
-                        xpath(TITLE_PROCEED_TO_CHECKOUT))).click();
+                until(ExpectedConditions.visibilityOfElementLocated(By.xpath(TITLE_PROCEED_TO_CHECKOUT))).click();
     }
 
     public String getTotalPrice(){

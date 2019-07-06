@@ -11,8 +11,12 @@ public class ExceptionEx3 {
             File file = new File("E://file.txt");
 
             FileReader fr = new FileReader(file);
+
         } catch (FileNotFoundException e) {
             System.out.println("File does not exist");
+        }
+        finally {
+            System.out.println("FINALY");
         }
     }
 }

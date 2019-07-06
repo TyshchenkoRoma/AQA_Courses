@@ -9,7 +9,6 @@ public class Listener implements ITestListener {
     public void onTestStart(ITestResult result) {
         System.out.println("On test start");
     }
-
     public void onTestSuccess(ITestResult result) {
         System.out.println("The test was successful");
     }
@@ -33,4 +32,5 @@ public class Listener implements ITestListener {
     public void onFinish(ITestContext context) {
         System.out.println("On finish");
   }
+
 }

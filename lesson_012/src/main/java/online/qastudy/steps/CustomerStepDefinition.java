@@ -1,23 +1,15 @@
 package online.qastudy.steps;
 
-import cucumber.api.java.bs.A;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import online.qastudy.model.Account;
 import online.qastudy.model.AccountBuilder;
 import online.qastudy.pages.MainPage;
 import online.qastudy.pages.MyAccountPage;
 import online.qastudy.pages.SignInPage;
-import online.qastudy.utils.Config;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import static online.qastudy.utils.TestHelper.randomInt;

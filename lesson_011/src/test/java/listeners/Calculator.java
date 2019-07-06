@@ -1,5 +1,6 @@
 package listeners;
 
+/*
 public class Calculator {
     private Operation operation;
     private double leftValue;
@@ -55,3 +56,4 @@ public class Calculator {
         this.rightValue = rightValue;
     }
 }
+*/

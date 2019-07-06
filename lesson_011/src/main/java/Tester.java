@@ -1,9 +1,5 @@
-import edu.dmytroqa.testng.Calculator;
-import edu.dmytroqa.testng.Listener;
-import edu.dmytroqa.testng.Operation;
-import org.testng.Assert;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+
+
 
 @Listeners(Listener.class)
 public class Tester {

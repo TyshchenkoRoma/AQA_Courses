@@ -8,6 +8,8 @@ public class ExceptionEx1 {
             System.out.println(a.charAt(0));
         } catch(NullPointerException e) {
             System.out.println("NullPointerException..");
+            e.printStackTrace();
+            System.out.println("sdfghjkl;");
         }
     }
 }
