@@ -37,9 +37,11 @@
                     <version>2.19.1</version>
                     <configuration>
                         <suiteXmlFiles>
-                         <!--   <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                           <!--<suiteXmlFile>smoke.xml</suiteXmlFile>-->
                             <suiteXmlFile>${suiteFile}</suiteXmlFile>
-                          <!--  <suiteXmlFile>regresion.xml</suiteXmlFile>-->
+<!--
+                            <suiteXmlFile>regresionFolder2.xml</suiteXmlFile>
+-->
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>

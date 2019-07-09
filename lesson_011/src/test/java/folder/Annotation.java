@@ -27,7 +27,7 @@ public class Annotation {
     @Test
     public void test1(){
         System.out.println("test1");
-        Assert.assertEquals("1", "1");
+        Assert. assertEquals("1", "1");
     }
 
     @Test(timeOut=1000)

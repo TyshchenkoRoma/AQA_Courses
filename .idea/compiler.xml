@@ -12,6 +12,7 @@
         <module name="5" />
         <module name="7" />
         <module name="Course" />
+        <module name="IO" />
         <module name="lesson_001" />
         <module name="lesson_002" />
         <module name="lesson_003" />
