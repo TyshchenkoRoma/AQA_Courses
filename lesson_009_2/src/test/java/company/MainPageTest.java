@@ -17,8 +17,8 @@ public class MainPageTest extends BaseTest {
 
     @Test
     public void canCheckTotalPriceForTShirt(){
-        mainPage.clickTShirtTab();
-        mainPage.scrollToItem();
+        mainPage.clickTShirtTab()
+                .scrollToItem();
         mainPage.navigateToItemView();
         mainPage.clickAddToCart();
         mainPage.clickProceedToCheckout();

@@ -17,7 +17,7 @@ public class _4_OS {
             long startTime  = System.currentTimeMillis();
             copy(in, out);
             long stopTime = System.currentTimeMillis();
-           // System.out.println("Result time is: " + (stopTime - startTime));
+            System.out.println("Result time is: " + (stopTime - startTime));
         } catch (IOException e) {
             throw new IOException("Exception when copy from " + fileFromName + " to " + fileToName);
         } finally {
@@ -25,9 +25,9 @@ public class _4_OS {
             closeAndFlushQuitly(out);
         }
     }
-
+                                // flush()
     public static void copy(InputStream in, OutputStream out) throws IOException {
-        byte[] buff = new byte[64 * 1024];
+        byte[] buff = new byte[1024];
        // byte[] buff = new byte[1];
         int count;
         while ((count = in.read(buff)) != -1) {

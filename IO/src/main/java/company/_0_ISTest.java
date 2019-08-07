@@ -9,6 +9,7 @@ import java.net.URL;
 public class _0_ISTest {
     public static void main(String[] args) throws IOException {
 
+        // Three different Streams  -> IS
         InputStream inFile = new FileInputStream("/Users/romantyshchenko/Course_QA_Auto/AQA_Courses/IO/src/main/resources/text.txt");
         readFullyByByte(inFile);
         System.out.print("\n\n\n");
@@ -21,7 +22,7 @@ public class _0_ISTest {
         readFullyByByte(inArray);
         System.out.print("\n\n\n");
     }
-
+                                       // Methods
     public static void readFullyByByte(InputStream in) throws IOException {
         while (true) {
             int oneByte = in.read();
