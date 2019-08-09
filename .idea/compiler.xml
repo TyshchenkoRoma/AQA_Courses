@@ -11,6 +11,7 @@
         <module name="4" />
         <module name="5" />
         <module name="7" />
+        <module name="API" />
         <module name="Course" />
         <module name="IO" />
         <module name="lesson_001" />
