@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>1</module>
         <module>IO</module>
         <module>API</module>
+        <module>Appium</module>
     </modules>
 
 
