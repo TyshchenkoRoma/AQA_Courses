@@ -12,7 +12,7 @@ public class _0_ISTest {
         // Three different Streams  -> IS
         InputStream inFile = new FileInputStream("/Users/romantyshchenko/Course_QA_Auto/AQA_Courses/IO/src/main/resources/text.txt");
         readFullyByByte(inFile);
-        System.out.print("\n\n\n");
+        System.out.print("\n\n\n"  );
 
         InputStream inUrl = new URL("http://google.com").openStream();
         readFullyByByte(inUrl);
