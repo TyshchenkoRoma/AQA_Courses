@@ -11,7 +11,7 @@ public class _0_ISTest {
     public static void main(String[] args) throws IOException {
 
         // Three different Streams  -> IS
-        InputStream inFile = new FileInputStream("/Users/romantyshchenko/Course_QA_Auto/AQA_Courses/IO/src/main/resources/text.txt");
+        InputStream inFile = new FileInputStream("/Uuusers/romantyshchenko/Course_QA_Auto/AQA_Courses/IO/src/main/resources/text.txt");
         readFullyByByte(inFile);
         System.out.print("\n\n\n"  );
 
