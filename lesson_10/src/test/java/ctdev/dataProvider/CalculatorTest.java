@@ -16,7 +16,7 @@ public class CalculatorTest {
                 {0, calc.summ(0, 0)},
                 {0, calc.summ(-2, 2)},
                 {-100, calc.summ(-30, -70)},
-                {10000, calc.summ(3000, 7000)},
+                {10000, calc.summ(3000, 7000)}  ,
         };
     }
 
