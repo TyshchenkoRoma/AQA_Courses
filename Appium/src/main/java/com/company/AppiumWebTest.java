@@ -74,5 +74,4 @@ public class AppiumWebTest {
 
         return new AndroidDriver(serverUrl, capabilities);
     }
-
 }

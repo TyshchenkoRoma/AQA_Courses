@@ -1,4 +1,4 @@
 public class Class2 {
-    protected int var = 10;
 
+    private int var = 10;
 }
