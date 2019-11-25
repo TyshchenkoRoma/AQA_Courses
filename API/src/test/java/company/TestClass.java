@@ -19,19 +19,19 @@ public class TestClass {
     @Test
     public void getAllEmployees() {
         // Option 1
-//        given(). // Not mandatory
-//                when().
-//                get("/api/v1/employees").
-//                then().
-//                assertThat().statusCode(200).extract().body().jsonPath().prettyPrint();
+        given(). // Not mandatory
+                when().
+                get("/api/v1/employees").
+                then().
+                assertThat().statusCode(200).extract().body().jsonPath().prettyPrint();
 
         // Option 2
-        String response = when().
-                                get("/api/v1/employees").
-                          then().
-                                assertThat().statusCode(200).extract().body().asString();
-
-        System.out.println(response);
+//        String response = when().
+//                                get("/api/v1/employees").
+//                          then().
+//                                assertThat().statusCode(200).extract().body().asString();
+//
+//        System.out.println(response);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class TestClass {
 
         List<Double> employeeSalariesDouble = new ArrayList<Double>();
 
-//        employeeSalary.forEach(System.out::println);
+        employeeSalary.forEach(System.out::println);
 
         employeeSalary.forEach(s -> employeeSalariesDouble.add(Double.parseDouble(s.toString())));
 
@@ -59,10 +59,10 @@ public class TestClass {
 
 
         // filter salaries < 1000 and distinct
-//        employeeSalariesDouble.stream()
-//                .distinct()
-//                .filter(s -> s < 1000 && s > 0)
-//                .forEach(System.out::println);
+        employeeSalariesDouble.stream()
+                .distinct()
+                .filter(s -> s < 1000 && s > 0)
+                .forEach(System.out::println);
 
 //         sum all employees salaries which is less than 1000
         double salarySum = employeeSalariesDouble.stream()
@@ -88,7 +88,7 @@ public class TestClass {
     public void getEmployeesById() {
         final JsonPath jsonPath = given().
                 when()
-                .get("/api/v1/employee/{id}", 73568).
+                .get("/api/v1/employee/{id}", 139293).
                         then()
                 .assertThat().statusCode(200)
                 .extract().body().jsonPath();
@@ -100,7 +100,7 @@ public class TestClass {
 
     @Test
     public void createAnEmployee() {
-        Employee employee = new Employee("Dmytro", 10000.0, 30, 100500);
+        Employee employee = new Employee("Dmytro", 10000.0, 30, 155550);
         final JsonPath jsonPath =
                 given()
                         .body(employee).
@@ -114,7 +114,7 @@ public class TestClass {
 
     @Test
     public void updateAnEmployee() {
-        Employee employee = new Employee("Dmytro", 10000.0, 30, 100500);
+        Employee employee = new Employee("Dmytro12", 10000.0, 30, 110500);
         final JsonPath jsonPath =
                 given()
                         .body(employee.toString()).
@@ -130,7 +130,7 @@ public class TestClass {
     public void deleteAnEmployee() {
         final JsonPath jsonPath =
                 when().
-                        get("/delete/{id}", 73558).
+                        get("/delete/{id}", 139293).
                         then()
                         .assertThat().statusCode(200)
                         .extract().body().jsonPath();
